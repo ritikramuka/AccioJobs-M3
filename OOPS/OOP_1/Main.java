@@ -8,7 +8,7 @@ class Car {
     // constructor
 
     // default constructor
-    Car () {
+    Car() {
         System.out.println("I'm a constructor");
         modelName = "Not Specified";
         color = "Not Specified";
@@ -16,14 +16,14 @@ class Car {
     }
 
     // parameterised constructor
-    Car (String givenModelName, String givenColor, int givenPrice) {
+    Car(String givenModelName, String givenColor, int givenPrice) {
         System.out.println("This is a parametarised constructor");
         modelName = givenModelName;
         color = givenColor;
         price = givenPrice;
     }
 
-    Car (String givenModelName, String givenColor) {
+    Car(String givenModelName, String givenColor) {
         System.out.println("This is a parametarised constructor 2");
         modelName = givenModelName;
         color = givenColor;
@@ -31,23 +31,23 @@ class Car {
     }
 
     // Class Methods
-    void drive () {
+    void drive() {
         System.out.println("car is running");
     }
 
-    void lock () {
+    void lock() {
         System.out.println("the car is locked");
     }
 
-    void unlock () {
+    void unlock() {
         System.out.println("the car is unlocked");
     }
 
     // setter
-    void setPrice (int np) {
+    void setPrice(int np) {
         if (np < 0) {
             return;
-        } 
+        }
 
         price = np;
     }
@@ -57,7 +57,6 @@ class Car {
         return price;
     }
 }
-
 
 class Main {
     public static void main(String[] args) {
@@ -79,13 +78,13 @@ class Main {
         // c3.lock();
         // System.out.println(c3.color + " " + c3.price + " " + c3.modelName);
 
-        Car c4 = new Car();
-        System.out.println(c4.price);
+        // Car c4 = new Car();
+        // System.out.println(c4.price);
 
-        Car c5 = new Car("automatic", "red", 500000);
-        System.out.println(c5.price);
+        // Car c5 = new Car("automatic", "red", 500000);
+        // System.out.println(c5.price);
 
-        Car c6 = new Car ("manual", "Blue");
-        System.out.println(c6.color + " " + c6.modelName + " " + c6.price);
+        // Car c6 = new Car("manual", "Blue");
+        // System.out.println(c6.color + " " + c6.modelName + " " + c6.price);
     }
 }
